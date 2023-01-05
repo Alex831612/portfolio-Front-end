@@ -1,0 +1,266 @@
+/* generales */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+.seccion-oscura {
+    color: white;
+    background-color: #1b1b32;
+}
+.seccion-clara {
+    color: black;
+    background-color: white;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt', cursive;
+}
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+}
+.texto-negro {
+    color: black;
+}
+.texto-blanco {
+    color: white;
+}
+
+/* Barra de navegacion*/
+.navbar {
+    padding: 1rem;
+    background-color: #1b1b32;
+}
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-link{
+    color: white !important;
+    font-family: 'Work Sans', sans-serif;
+}
+.modal-content {
+    text-align: center;
+}
+
+/* banner y perfil */
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Rubik Dirt', cursive;
+    color: #fff;
+}
+
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../img/banner.jpg);
+    background-size: cover;
+    color:#fff;
+    display: flex;
+    align-items: center;
+}
+.contenido-banner {
+    padding: 6rem;
+}
+.perfil-imagen-desarrollador {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.contenido-banner h2 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Acerca de mi */
+.acerca-mi{
+    height: 500px;
+    padding: 10px;
+}
+.acerca-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Experiencia */
+.experiencia {
+    padding: 40px 40px 60px 40px;
+}
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.experiencia .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2 ease-in;
+}
+.experiencia .columna:hover {
+    color:white;
+    background-color: #1b1b32;
+}
+
+/* Habilidades */
+.skills {
+    padding: 10px 20px !important;
+}
+.skills .fila .col h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.skills h2 {
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.skills .fila {
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+    flex-direction: column;
+}
+
+.skills .skill > span {
+    font-weight: bold ;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.col-12 {
+    padding-top: 50px;
+}
+
+/* Proyectos */
+.proyectos-recientes {
+    padding: 40px;
+}
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.proyecto {
+    position: relative;
+}
+.proyecto:hover img {
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+.overlay .iconos-contenedor {
+    display: flex;
+}
+.overlay i {
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+  /* Pie de pagina (footer) */
+
+footer {
+    min-height: 500px;
+}
+
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+    color: black;
+}
+
+.derechos-de-autor {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+/* adaptacion */
+@media screen and (max-width: 767px){
+    .navbar-brand {
+        display: none;
+    }
+} 
+@media screen and (max-width: 400px){
+    .overlay p {
+        font-size: 18px;
+    }
+
+    .overlay i {
+        font-size: 40px;
+    }
+
+}
